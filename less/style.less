@@ -14,11 +14,32 @@ body {
   clear: both;
 }
 
+/* header */
+.main-header {
+  position: relative;
+  background-color: rgba(0,0,0,0.3);
+  
+  &__inner {    
+    padding-right: @padding-help;
+    padding-left: @padding-help;
+  }
+  
+  &__logo {
+    float: left;
+  }
+}
+
+
 /* Footer */
 .main-footer {
   text-align: center;
   padding-top: 40px;
   border-top: 1px solid #000;
+  
+  &__inner {
+    padding-right: @padding-help;
+    padding-left: @padding-help;
+  }
   
   &__logo {
     margin-bottom: 40px;
