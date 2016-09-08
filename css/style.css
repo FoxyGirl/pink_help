@@ -24,13 +24,13 @@ body {
 .main-footer__copyright {
   padding-top: 20px;
 }
-.main-footer__html-academy-logo {
+.main-footer__htmlacademy-logo {
   display: inline-block;
   vertical-align: middle;
   width: 27px;
   height: 34px;
   margin-left: 11px;
-  background-color: red;
+  background: transparent url('../img/htmlacademy.svg') center center no-repeat;
 }
 .socials {
   margin-bottom: 20px;
