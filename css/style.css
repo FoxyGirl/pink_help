@@ -21,6 +21,12 @@ body {
 .main-footer__logo {
   margin-bottom: 40px;
 }
+.main-footer__logo .glasses {
+  fill: cyan;
+}
+.main-footer__logo:hover .glasses {
+  fill: blue;
+}
 .main-footer__copyright {
   padding-top: 20px;
 }
