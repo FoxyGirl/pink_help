@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&subset=latin,cyrillic);
+/*********** Mixins **************/
+html,
+body {
+  color: #283645;
+  font-family: "Open Sans", Calibri, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.main-footer {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid #000;
+}
+.main-footer__logo {
+  margin-bottom: 40px;
+}
+.main-footer__copyright {
+  padding-top: 20px;
+}
+.main-footer__html-academy-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 34px;
+  margin-left: 11px;
+  background-color: red;
+}
+.socials {
+  margin-bottom: 20px;
+}
+.socials ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.socials__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+}
+.socials__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #e9ebec;
+  background: #ffffff url('../img/twitter.svg') center center no-repeat;
+}
+.socials__link:hover {
+  background-color: #e9ebec;
+}
+.socials__link--vk {
+  background-image: url('../img/twitter.svg');
+}
+.socials__link--facebook {
+  background-image: url('../img/facebook.svg');
+}
+.socials__link--youtube {
+  background-image: url('../img/youtube.svg');
+}

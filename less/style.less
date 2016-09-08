@@ -1,0 +1,79 @@
+@import "variables.less";
+
+html,
+body {
+  color: @brand-color;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  background-color: @light-color;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.main-footer {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid #000;
+  
+  &__logo {
+    margin-bottom: 40px;
+  }
+  
+  &__copyright {
+    padding-top: 20px;
+  }
+  
+  &__html-academy-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 34px;
+    margin-left: 11px;
+    background-color: red;
+  }
+}
+
+.socials {
+  margin-bottom: 20px;
+  
+  ul {
+    .ul-clear();
+    font-size: 0;
+  }
+  
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;    
+  }
+  
+  &__link {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid @gray-color;
+    background: #fff url('../img/twitter.svg') center center no-repeat;
+    
+    &:hover {
+      background-color: @gray-color;
+    }
+    
+    &--vk {
+      background-image: url('../img/twitter.svg');
+    }
+    
+    &--facebook {
+      background-image: url('../img/facebook.svg');
+    }
+    
+    &--youtube {
+      background-image: url('../img/youtube.svg');
+    }
+  }
+}
