@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="main-header__inner">
-      <div class="main-header-logo">
-        <a href="" class="main-header-logo__link">
-          <svg version="1.1" class="main-header-logo__img" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.318px" height="23.041px" viewBox="0 0 74.318 23.041" enable-background="new 0 0 74.318 23.041" xml:space="preserve">
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="page-header__logo">
+        <a href="#" class="page-header__logo-link">
+          <svg version="1.1" class="page-header__logo-img" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.318px" height="23.041px" viewBox="0 0 74.318 23.041" enable-background="new 0 0 74.318 23.041" xml:space="preserve">
             <g>
               <path d="M0,1.46c0-0.713,0.585-1.297,1.267-1.297h7.239c5.131,0,8.508,2.726,8.508,7.205v0.064c0,4.901-4.092,7.43-8.929,7.43
 		h-5.52v6.882c0,0.714-0.584,1.297-1.299,1.297C0.585,23.041,0,22.458,0,21.744V1.46z M8.182,12.526
@@ -32,16 +32,16 @@
           </svg>
         </a>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggler"></button>
+      <nav class="main-nav  main-nav--opened">
+        <button class="main-nav__toggler  main-nav__toggler--close" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="">Главная</a>
           </li>
-          <li class="menu__item">
+          <li class="main-nav__item">
             <a href="">Фотографии</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item  main-nav__item--active">
             <a href="">Конкурс</a>
           </li>
           <li class="main-nav__item">
@@ -49,7 +49,7 @@
           </li>
         </ul>
       </nav>
-      <h1 class="main-header__title">
+      <h1 class="page-header__title">
        Конкурс на самое безбашеное путешествие с Пинк
      </h1>
     </div>

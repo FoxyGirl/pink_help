@@ -13,26 +13,81 @@ body {
   clear: both;
 }
 /* header */
-.main-header {
+.page-header {
+  text-align: center;
+  color: #ffffff;
+  background: #1d2631 url('../img/background-1@1x.jpg') top center no-repeat;
+}
+.page-header__inner {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-color: #1d2631;
 }
-.main-header__inner {
-  padding-right: 10px;
-  padding-left: 10px;
+@media screen and (min-width: 720px) {
+  .page-header__inner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
-.main-header-logo {
-  float: left;
+.page-header__logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
-.main-header-logo__img {
+.page-header__logo svg {
   fill: #ffffff;
 }
-.main-header-logo__link {
+.page-header__logo-link {
   display: block;
 }
-.main-header-logo:hover .main-header-logo__img {
+.page-header__logo:hover svg {
   fill: #d22856;
+}
+.page-header__title {
+  padding: 30px 40px 50px;
+  font-size: 24px;
+  font-weight: 200;
+}
+/* navigation */
+.main-nav {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.main-nav__toggler {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 30px;
+  background: transparent url('../img/menu-burger.svg') right center no-repeat;
+  border: none;
+}
+.main-nav__toggler--close {
+  background-image: url('../img/menu-cross.svg');
+}
+.main-nav--opened {
+  background-color: #283645;
+}
+.main-nav--opened .main-nav__list {
+  transition: height 1.5s;
+  height: auto;
+}
+.main-nav--opened .main-nav__item a {
+  display: block;
+  padding: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 1px;
+  padding-top: 65px;
+  text-align: center;
+  overflow: hidden;
 }
 /* Footer */
 .page-footer {
@@ -41,8 +96,8 @@ body {
   border-top: 1px solid #000;
 }
 .page-footer__inner {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .page-footer__logo {
   margin-bottom: 40px;
