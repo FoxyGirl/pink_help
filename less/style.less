@@ -131,6 +131,56 @@ body {
   }
 }
 
+.additional-text {
+  text-align: center;
+  padding: @indent-help;
+}
+
+/* photo section */
+.photos {
+  &__inner {
+    
+  }
+  &__list {
+    .ul-clear();
+  }
+  
+  &__item {
+    margin-right: @indent-help;
+    margin-left: @indent-help;
+    margin-bottom: @indent-help;
+    background-color: @light-gray-color;
+  }
+  
+  &__image {
+    width: 100%;
+  }
+  
+  &__content {
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  &__author {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__timer {
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  &__description {
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  &__like {
+    color: @pink-color;
+  }
+}
+
 /*Forma*/
 .form {
   &__section {
