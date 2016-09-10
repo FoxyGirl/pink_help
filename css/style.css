@@ -290,6 +290,42 @@ body {
 .price__toggle--active {
   border-color: #000;
 }
+.contacts {
+  text-align: center;
+}
+.contacts__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contacts__item {
+  margin-bottom: 30px;
+}
+.contacts__name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.contacts__link {
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #d22856;
+}
+.map img {
+  width: 100%;
+  height: auto;
+}
 .additional-text {
   text-align: center;
   padding: 20px;
