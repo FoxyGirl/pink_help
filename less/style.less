@@ -204,13 +204,16 @@ body {
 }
 
 .information {
+  text-align: center;
+  
   &__inner {
-    margin-right: @indent-help;
-    margin-left: @indent-help;
+
   }
   &__introduction {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-right: @indent-help;
+    padding-left: @indent-help;    
     text-align: center;
     font-size: 24px;
     font-weight: 300;
@@ -218,6 +221,8 @@ body {
   }
   &__list {
     .ul-clear();
+    padding-right: @indent-help;
+    padding-left: @indent-help;
     padding-bottom: 320px;
     background-color: @light-gray-color;
   }

@@ -172,13 +172,14 @@ body {
 .applications__link--windows {
   background-image: url('../img/microsoft-logo.svg');
 }
-.information__inner {
-  margin-right: 20px;
-  margin-left: 20px;
+.information {
+  text-align: center;
 }
 .information__introduction {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -188,6 +189,8 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 320px;
   background-color: #f2f2f2;
 }
