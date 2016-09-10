@@ -14,13 +14,15 @@ body {
 }
 .btn {
   display: inline-block;
-  padding: 20px 45px;
+  box-sizing: border-box;
+  min-width: 280px;
+  padding: 10px 45px;
   margin-bottom: 10px;
   background-color: #ffffff;
   font-size: 18px;
   font-weight: bold;
-  border: 2px solid #e9ebec;
-  border-radius: 20px;
+  border: 3px solid #e9ebec;
+  border-radius: 40px;
   outline: none;
 }
 .btn--submit {
@@ -30,6 +32,20 @@ body {
   background-color: #2aab6d;
   border-color: #2aab6d;
   border-radius: 4px;
+}
+.btn--post {
+  color: #d22856;
+  border-color: #d22856;
+  background-color: transparent;
+}
+.btn--reset {
+  color: #283645;
+  border-color: #283645;
+  background-color: transparent;
+  opacity: 0.1;
+}
+.btn--reset:hover {
+  opacity: 1;
 }
 /* header */
 .page-header {
