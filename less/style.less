@@ -281,6 +281,63 @@ body {
   }
 }
 
+.price {  
+  background-color: @light-gray-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  &__slider {
+    position: relative;    
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+  }
+  
+  &__list {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 600px;
+  }
+  
+  &__item {
+    min-width: 280px;
+  }
+  
+  &__option {
+    padding: 20px;
+    border: 1px solid red;
+  }
+  
+  &__name {
+    padding: 20px;
+    border: 1px solid red;
+  }
+  
+  &__toggles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  &__toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 7px;
+  height: 7px;
+  margin: 10px;
+  background-color: @gray-color;
+  border: 3px @light-color solid;
+  border-radius: 50%;
+
+    &--active {
+      border-color: #000;
+    }
+  }
+}
+
 .additional-text {
   text-align: center;
   padding: @indent-help;
