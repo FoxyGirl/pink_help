@@ -173,18 +173,37 @@
       </div>
     </section>
     <p class="additional-text">
-      Затмите их всех! 
+      Затмите их всех!
       <br>Выкладывайте все, что накопилось в телефоне!
     </p>
     <form class="form-post" action="" method="post" name="form-post">
-     <div class="form__section  form__section--gray">
-            <div class="form__submit">
-        <button class="btn btn--post" type="submit">Запостить</button>
-        <button class="btn btn--reset" type="reset">Отмена</button>
-      </div> 
-       
-     </div>
-    
+      <div class="form__section  form__section--gray">
+        <div class="form__item">
+          <label for="" class="form-post__load-file">
+            <input class="form__input" type="file" name="new_photo" id="newPhoto">
+          </label>
+        </div>
+        <div class="form__item">
+          <ul class="input-list  input-list--line">
+            <li class="input-list__item  input-list__item--line">
+                <input class="form-post__input--radio" type="radio" name="correct" valur="crop" id="crop" checked>
+                <label class="form-post__label form-post__label--crop" for="crop"></label>
+            </li>
+            <li class="input-list__item  input-list__item--line">
+              <input class="form-post__input--radio" type="radio" name="correct" valur="brightness" id="brightness">
+              <label class="form-post__label form-post__label--crop" for="brightness"></label>
+            </li>
+            <li class="input-list__item  input-list__item--line">
+              <input class="form-post__input--radio" type="radio" name="correct" valur="contarst" id="contarst">
+              <label class="form-post__label form-post__label--crop" for="contarst"></label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__submit">
+          <button class="btn btn--post" type="submit">Запостить</button>
+          <button class="btn btn--reset" type="reset">Отмена</button>
+        </div>
+      </div>
     </form>
   </div>
   <footer class="page-footer">
