@@ -20,6 +20,10 @@ body {
   color: @light-color;
   background: #1d2631 url('../img/background-1@1x.jpg') top center no-repeat;
   
+  &--bg-position {
+    background-position: center 300px;
+  }
+  
   &__inner {
     position: relative;
     
@@ -68,6 +72,7 @@ body {
     height: 30px;
     background: transparent url('../img/menu-burger.svg') right center no-repeat;    
     border: none;
+    outline: none;
     
     &--close {
       background-image: url('../img/menu-cross.svg');
@@ -75,14 +80,20 @@ body {
   }
   
   &--opened {
-    background-color: @brand-color;
+    background-color: @brand-color;    
+  }
+  
+  &__list {
+    .ul-clear();
+    height: 1px;
+    padding-top: 65px;
+    text-align: center;
+    overflow: hidden;
     
-    .main-nav__list {
-      transition: height 1.5s;
+    &.main-nav__list--opened {
       height: auto;
-    }
-    
-    .main-nav__item {
+      
+      .main-nav__item {
       a {
         display: block;
         padding: 25px;
@@ -95,14 +106,7 @@ body {
         border-bottom: 1px solid #000;
       }
     }
-  }
-  
-  &__list {
-    .ul-clear();
-    height: 1px;
-    padding-top: 65px;
-    text-align: center;
-    overflow: hidden;
+    }
   }
 }
 
