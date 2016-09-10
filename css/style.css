@@ -338,6 +338,25 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+.scale {
+  position: relative;
+  width: 240px;
+  margin: 35px auto;
+}
+.scale__line {
+  height: 2px;
+  background-color: #000;
+}
+.scale__slider {
+  position: absolute;
+  top: -6px;
+  left: 75%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+}
 /* Footer */
 .page-footer {
   text-align: center;
