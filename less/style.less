@@ -150,10 +150,35 @@ body {
     margin-left: @indent-help;
     margin-bottom: @indent-help;
     background-color: @light-gray-color;
+    
+    &--panarama {
+      margin: 0;
+    }
   }
   
   &__image {
-    width: 100%;
+    font-size: 0;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    &--panarama {
+      position: relative;
+      
+      &::after {
+        content: attr(data-title);
+        position: absolute;
+        top: 0;
+        right: @indent-help;
+        padding: 10px 25px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: @light-color;
+        background-color: @pink-color;
+      }
+    }
   }
   
   &__content {

@@ -127,8 +127,29 @@ body {
   margin-bottom: 20px;
   background-color: #f2f2f2;
 }
+.photos__item--panarama {
+  margin: 0;
+}
 .photos__image {
+  font-size: 0;
+}
+.photos__image img {
   width: 100%;
+  height: auto;
+}
+.photos__image--panarama {
+  position: relative;
+}
+.photos__image--panarama::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 10px 25px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #d22856;
 }
 .photos__content {
   padding: 20px;
