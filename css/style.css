@@ -338,16 +338,16 @@ body {
   display: inline-block;
   vertical-align: top;
 }
-.scale {
+.scale-slider {
   position: relative;
   width: 240px;
   margin: 35px auto;
 }
-.scale__line {
+.scale-slider__line {
   height: 2px;
   background-color: #000;
 }
-.scale__slider {
+.scale-slider__point {
   position: absolute;
   top: -6px;
   left: 75%;
