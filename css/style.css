@@ -172,6 +172,73 @@ body {
 .applications__link--windows {
   background-image: url('../img/microsoft-logo.svg');
 }
+.information__inner {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.information__introduction {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.information__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 320px;
+  background-color: #f2f2f2;
+}
+.information__item {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.information__item p {
+  font-size: 14px;
+}
+.information__title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.reviews__inner {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.reviews__slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.reviews__author {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.reviews__text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.reviews__toggles {
+  text-align: center;
+}
+.reviews__toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 7px;
+  height: 7px;
+  margin: 10px;
+  background-color: #e9ebec;
+  border: 3px #ffffff solid;
+  border-radius: 50%;
+}
+.reviews__toggle--active {
+  border-color: #000;
+}
 .additional-text {
   text-align: center;
   padding: 20px;
