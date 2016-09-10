@@ -20,7 +20,9 @@ body {
   min-width: 280px;
   padding: 10px 45px;
   margin-bottom: 10px;
-  background-color: @light-color;
+  background-color: transparent;
+  color: @light-color;
+  text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   border: 3px solid @gray-color;
@@ -39,18 +41,21 @@ body {
   &--post {
     color: @pink-color;
     border-color: @pink-color;
-    background-color: transparent;
   }
   
   &--reset {
     color: @brand-color;
     border-color: @brand-color;
-    background-color: transparent;
     opacity: 0.1;
     
     &:hover {
       opacity: 1;
     }
+  }
+  
+  &--applications-load {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -146,6 +151,54 @@ body {
         border-bottom: 1px solid #000;
       }
     }
+    }
+  }
+}
+
+/* promo */
+.promo-hand {
+  min-height: 395px;
+}
+
+.applications {
+  background-color: darken(@brand-color, 15%);
+  
+  &__text {
+    padding-right: @indent-help;
+    padding-left: @indent-help;
+    padding-bottom: 40px;
+  }
+  
+  &__list {
+    .ul-clear();
+    text-align: center;
+  }
+  
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin: 0 6px;
+  }
+  
+  &__link {
+    display: block;
+    height: 100%;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    &--mac {
+      background-image: url('../img/apple-logo.svg');
+    }
+    
+    &--android {
+      background-image: url('../img/android-logo.svg');
+    }
+    
+    &--windows {
+      background-image: url('../img/microsoft-logo.svg');
     }
   }
 }
