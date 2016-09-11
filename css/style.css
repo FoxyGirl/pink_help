@@ -12,6 +12,10 @@ body {
   display: table;
   clear: both;
 }
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
 .btn {
   display: inline-block;
   box-sizing: border-box;
@@ -159,6 +163,7 @@ body {
 .applications__link {
   display: block;
   height: 100%;
+  font-size: 0;
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
@@ -342,7 +347,7 @@ body {
   margin-bottom: 20px;
   background-color: #f2f2f2;
 }
-.photos__item--panarama {
+.photos__item--panorama {
   margin: 0;
 }
 .photos__image {
@@ -352,10 +357,10 @@ body {
   width: 100%;
   height: auto;
 }
-.photos__image--panarama {
+.photos__image--panorama {
   position: relative;
 }
-.photos__image--panarama::after {
+.photos__image--panorama::after {
   content: attr(data-title);
   position: absolute;
   top: 0;
