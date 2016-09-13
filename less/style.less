@@ -21,15 +21,17 @@ body {
 
 .btn {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   min-width: 280px;
-  padding: 10px 45px;
   margin-bottom: 10px;
-  background-color: transparent;
-  color: @light-color;
+  padding: 10px 45px;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  color: @light-color;
   border: 3px solid @gray-color;
   border-radius: 40px;
   outline: none;
@@ -59,8 +61,9 @@ body {
   }
   
   &--applications-load {
-    margin-top: 20px;
+    margin-top: 27px;
     margin-bottom: 20px;
+    padding: 14px 20px;
   }
 }
 
@@ -71,7 +74,7 @@ body {
   background: #1d2631 url('../img/background-1@1x.jpg') top center no-repeat;
   
   &--bg-position {
-    background-position: center 300px;
+    background-position: center 258px;
   }
   
   &__inner {
@@ -136,28 +139,32 @@ body {
   &__list {
     .ul-clear();
     height: 1px;
-    padding-top: 65px;
+    padding-top: 69px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
     text-align: center;
     overflow: hidden;
     
     &.main-nav__list--opened {
-      height: auto;
+      height: auto;      
       
-      .main-nav__item {
-      a {
-        display: block;
-        padding: 25px;
-        font-weight: bold;
-        color: @light-color;
-        text-decoration: none;
-        text-transform: uppercase;
-        background-color: @brand-color;
-        border-top: 1px solid #485461;
-        border-bottom: 1px solid #000;
-      }
-    }
+
     }
   }
+  
+       &__item {
+        a {
+          display: block;
+          padding: 19px;
+          font-weight: bold;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: @light-color;        
+          background-color: @brand-color;
+          border-top: 1px solid #485461;
+          border-bottom: 1px solid #000;
+        }
+      }
 }
 
 /* promo */

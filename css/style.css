@@ -18,15 +18,17 @@ body {
 }
 .btn {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   min-width: 280px;
-  padding: 10px 45px;
   margin-bottom: 10px;
-  background-color: transparent;
-  color: #ffffff;
+  padding: 10px 45px;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  color: #ffffff;
   border: 3px solid #e9ebec;
   border-radius: 40px;
   outline: none;
@@ -52,8 +54,9 @@ body {
   opacity: 1;
 }
 .btn--applications-load {
-  margin-top: 20px;
+  margin-top: 27px;
   margin-bottom: 20px;
+  padding: 14px 20px;
 }
 /* header */
 .page-header {
@@ -62,7 +65,7 @@ body {
   background: #1d2631 url('../img/background-1@1x.jpg') top center no-repeat;
 }
 .page-header--bg-position {
-  background-position: center 300px;
+  background-position: center 258px;
 }
 .page-header__inner {
   position: relative;
@@ -117,20 +120,22 @@ body {
   padding: 0;
   list-style: none;
   height: 1px;
-  padding-top: 65px;
+  padding-top: 69px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
   text-align: center;
   overflow: hidden;
 }
 .main-nav__list.main-nav__list--opened {
   height: auto;
 }
-.main-nav__list.main-nav__list--opened .main-nav__item a {
+.main-nav__item a {
   display: block;
-  padding: 25px;
+  padding: 19px;
   font-weight: bold;
-  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
   background-color: #283645;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000;
