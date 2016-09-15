@@ -55,7 +55,7 @@ body {
 }
 .btn--applications-load {
   margin-top: 27px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   padding: 14px 20px;
 }
 /* header */
@@ -143,14 +143,19 @@ body {
 /* promo */
 .promo-hand {
   min-height: 395px;
+  background: transparent url("../img/iphone-hand-mobile@1x.png") 0 bottom no-repeat;
 }
 .applications {
-  background-color: #0c1015;
+  background-color: #1d2631;
 }
 .applications__text {
+  margin-top: 20px;
+  margin-bottom: 0;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 40px;
+  padding-bottom: 30px;
+  line-height: 1.8;
 }
 .applications__list {
   margin: 0;
@@ -178,39 +183,46 @@ body {
 }
 .applications__link--android {
   background-image: url('../img/android-logo.svg');
+  background-position: center 11px;
 }
 .applications__link--windows {
   background-image: url('../img/microsoft-logo.svg');
+  background-position: center 14px;
 }
 .information {
   text-align: center;
 }
+.information__inner {
+  padding-top: 37px;
+}
 .information__introduction {
-  margin-top: 20px;
   margin-bottom: 20px;
   padding-right: 20px;
   padding-left: 20px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
-  line-height: 1.8;
+}
+.information__introduction p {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .information__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-top: 73px;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 320px;
   background-color: #f2f2f2;
 }
 .information__item {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 .information__item p {
   font-size: 14px;
+  line-height: 1.8;
 }
 .information__title {
   margin-bottom: 15px;

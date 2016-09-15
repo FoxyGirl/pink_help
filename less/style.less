@@ -62,7 +62,7 @@ body {
   
   &--applications-load {
     margin-top: 27px;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     padding: 14px 20px;
   }
 }
@@ -170,15 +170,20 @@ body {
 /* promo */
 .promo-hand {
   min-height: 395px;
+  background: transparent url("../img/iphone-hand-mobile@1x.png") 0 bottom no-repeat;
 }
 
 .applications {
-  background-color: darken(@brand-color, 15%);
+  background-color: @body-bg-dark;
   
   &__text {
+    margin-top: 20px;
+    margin-bottom: 0;
     padding-right: @indent-help;
     padding-left: @indent-help;
     padding-bottom: 40px;
+    padding-bottom: 30px;
+    line-height: @line-height;
   }
   
   &__list {
@@ -208,10 +213,12 @@ body {
     
     &--android {
       background-image: url('../img/android-logo.svg');
+      background-position: center 11px;
     }
     
     &--windows {
       background-image: url('../img/microsoft-logo.svg');
+      background-position: center 14px;
     }
   }
 }
@@ -220,20 +227,26 @@ body {
   text-align: center;
   
   &__inner {
-
+    padding-top: 37px;
   }
+  
   &__introduction {
-    margin-top: 20px;
     margin-bottom: 20px;
     padding-right: @indent-help;
     padding-left: @indent-help;    
     text-align: center;
     font-size: 24px;
     font-weight: 300;
-    line-height: @line-height;
+    
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
   }
+  
   &__list {
     .ul-clear();
+    padding-top: 73px;
     padding-right: @indent-help;
     padding-left: @indent-help;
     padding-bottom: 320px;
@@ -241,12 +254,11 @@ body {
   }
   
   &__item {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     
     p {
       font-size: 14px;
+      line-height: @line-height;
     }
   }
   
